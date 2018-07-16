@@ -12,12 +12,11 @@
 	font-size: 20px;
 }
 
-#pirateFace {
-	height: 70px;
-	width: auto;
-	margin-right: 10px;
-}
-
 #members {
 	text-align: center;
 }
+
+.kickoff {
+	text-align: center;
+}
+

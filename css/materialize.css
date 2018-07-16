@@ -4757,6 +4757,7 @@ small {
 
 .card .card-title {
   font-size: 24px;
+  font-family: 'Titillium Web', sans serif;
   font-weight: 300;
 }
 
@@ -4877,7 +4878,7 @@ small {
 }
 
 .card .card-image .card-title {
-  color: #fff;
+  color: #1565C0;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -5029,7 +5030,7 @@ small {
   height: 48px;
   width: 100%;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 10px auto;
   white-space: nowrap;
 }
 
@@ -5073,7 +5074,6 @@ small {
   height: 48px;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
 }
 
 .tabs .tab a {
@@ -5083,7 +5083,7 @@ small {
   height: 100%;
   padding: 0 24px;
   font-size: 22px;
-  font-family: 'Bungee Outline', cursive;
+  font-family: 'Titillium Web', cursive;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-transition: color .28s ease, background-color .28s ease;
@@ -8272,7 +8272,7 @@ input[type=range]::-ms-thumb {
 
 .slider {
   position: relative;
-  height: auto;
+  height: 400px;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
@@ -8300,7 +8300,7 @@ input[type=range]::-ms-thumb {
 .slider .slides {
   background-color: #9e9e9e;
   margin: 0;
-  height: 800px;
+  height: 400px;
 }
 
 .slider .slides li {

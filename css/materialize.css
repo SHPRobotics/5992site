@@ -5077,13 +5077,13 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: rgba(21, 101, 192, 1);
   display: block;
   width: 100%;
   height: 100%;
   padding: 0 24px;
-  font-size: 26px;
-  font-family: 'Titillium Web', sans serif;
+  font-size: 22px;
+  font-family: 'Bungee Outline', cursive;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-transition: color .28s ease, background-color .28s ease;
@@ -5091,13 +5091,12 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(62, 154, 213, 0.2);
   outline: none;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: transparent;
-  color: #ee6e73;
+  background-color: (0, 0, 0, 1);
+  color: #1565C0;
 }
 
 .tabs .tab.disabled a,
@@ -5110,7 +5109,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: gold;
   will-change: left, right;
 }
 
@@ -5923,7 +5922,7 @@ body.keyboard-focused .dropdown-content li:focus {
 .sidenav .collapsible-body,
 .sidenav.fixed .collapsible-body {
   border: 0;
-  background-color: #fff;
+  background-color: #1565C0;
 }
 
 .sidenav .collapsible-body li a,
@@ -7545,7 +7544,7 @@ input[type=range]::-ms-thumb {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
+  background-color: rgba(21, 101, 192, 0.8);
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
@@ -7578,10 +7577,11 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a {
-  color: rgba(0, 0, 0, 0.87);
+  color: snow;
   display: block;
   font-size: 14px;
   font-weight: 500;
+  font-family: 'Bungee Shade', cursive;
   height: 48px;
   line-height: 48px;
   padding: 0 32px;

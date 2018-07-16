@@ -1,0 +1,23 @@
+.navbar-fixed .nav-wrapper .brand-logo img {
+	height: 64px;
+}
+
+.social {
+	height: 20px;
+	width: auto;
+}
+
+.tab-content {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+#pirateFace {
+	height: 70px;
+	width: auto;
+	margin-right: 10px;
+}
+
+#members {
+	text-align: center;
+}

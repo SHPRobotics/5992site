@@ -4876,7 +4876,7 @@ small {
 }
 
 .card .card-image .card-title {
-  color: #1565C0;
+  color: snow;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -5086,6 +5086,30 @@ small {
   overflow: hidden;
   -webkit-transition: color .28s ease, background-color .28s ease;
   transition: color .28s ease, background-color .28s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .tabs .tab a {
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .tabs .tab a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tabs .tab a {
+    font-size:16px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .tabs .tab a {
+    font-size:14px;
+  }
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {

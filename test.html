@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/materialize.css" rel="stylesheet">
+	<link href="css/materialize.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link rel="icon" href="img/browsertab.png">
+	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
 </head>
@@ -15,6 +15,7 @@
 <script src="js/nav.js"></script>
 <script>
 $( document ).ready(function() {
+  $('.tabs').tabs();
   $('.sidenav').sidenav();
   $('.scrollspy').scrollSpy();
 });
@@ -204,6 +205,8 @@ $( document ).ready(function() {
     speed: 100,
     autoStart: false
   });
+</script>
+<script>
   new TypeIt('#about4', {
     strings: 'Achievements',
     speed: 100,

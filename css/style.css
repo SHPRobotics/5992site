@@ -8,15 +8,23 @@
 }
 
 .tab-content {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans serif;
 	font-size: 20px;
-}
-
-#members {
-	text-align: center;
 }
 
 .kickoff {
 	text-align: center;
 }
 
+.resources h1 {
+	color: black;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Comfortaa', cursive;
+}
+
+p, ul, li, {
+	font-family: 'Audiowide', cursive;
+}

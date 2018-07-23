@@ -7,7 +7,7 @@
   <link href="css/hover.css" rel="stylesheet">
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Outline|Bungee+Shade|Open+Sans|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -37,29 +37,40 @@
 </div>
 <div class="container">
   <div class="kickoff">
-    <h1>Next Season: </h1>
+    <h1 id="type1"></h1>
     <h3 id="countdown"></h3>
   </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
     <script>
       var countDownDate = new Date("Jan 5, 2019 10:30:00").getTime();
+      setTimeout(function() {
+        setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
 
-      var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      }, 3000);
 
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
+      var superscript = 'th';
+      var th = superscript.sup();
+
+      new TypeIt('#type1', {
+        strings: 'Kickoff: January 5' + th + ', 2019',
+        speed: 100,
+        autoStart: false
+      });
     </script>
 
 </body>

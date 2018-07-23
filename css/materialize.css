@@ -4400,7 +4400,7 @@ nav ul a {
   transition: background-color .3s;
   font-size: 1rem;
   color: snow;
-  font-family: "Bungee Shade", cursive;
+  font-family: 'Audiowide', cursive;
   display: block;
   padding: 0 15px;
   cursor: pointer;
@@ -4418,7 +4418,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul a:hover {
-  color: gold;
+
 }
 
 nav ul.left {
@@ -4577,6 +4577,11 @@ small {
 
 .thin {
   font-weight: 200;
+}
+
+.flow-text {
+  font-family: 'Open Sans', sans serif;
+  line-height: 4rem;
 }
 
 @media only screen and (min-width: 360px) {
@@ -4756,6 +4761,7 @@ small {
 
 .card .card-title {
   font-size: 24px;
+  font-family: 'Comfortaa', cursive;
   font-weight: 300;
 }
 
@@ -5075,40 +5081,34 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(21, 101, 192, 1);
+  color: black;
   display: block;
   width: 100%;
   height: 100%;
   padding: 0 24px;
   font-size: 22px;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Comfortaa', cursive;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-transition: color .28s ease, background-color .28s ease;
   transition: color .28s ease, background-color .28s ease;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .tabs .tab a {
     font-size:20px;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .tabs .tab a {
     font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .tabs .tab a {
     font-size:16px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .tabs .tab a {
-    font-size:14px;
   }
 }
 
@@ -5117,9 +5117,7 @@ small {
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  color: gold;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  
 }
 
 .tabs .tab.disabled a,
@@ -5131,7 +5129,7 @@ small {
 .tabs .indicator {
   position: absolute;
   bottom: 0;
-  height: 2px;
+  height: 4px;
   background-color: gold;
   will-change: left, right;
 }
@@ -5276,8 +5274,8 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #fff;
-  background-color: #26a69a;
+  color: snow;
+  background-color: #1565C0;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
@@ -5286,7 +5284,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #2bbbad;
+  background-color: #1565C0;
 }
 
 .btn-floating {
@@ -5611,7 +5609,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  font-family: "Bungee Shade", cursive;
+  font-family: 'Audiowide', cursive;
   color: #1565C0;
   display: block;
   line-height: 22px;
@@ -7535,7 +7533,8 @@ input[type=range]::-ms-thumb {
 .table-of-contents a {
   display: inline-block;
   font-weight: 300;
-  color: #757575;
+  font-family: 'Audiowide', cursive;
+  color: #1565C0;
   padding-left: 16px;
   height: 1.5rem;
   line-height: 1.5rem;
@@ -7552,7 +7551,7 @@ input[type=range]::-ms-thumb {
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 14px;
-  border-left: 2px solid #ee6e73;
+  border-left: 2px solid gold;
 }
 
 .sidenav {
@@ -7604,14 +7603,13 @@ input[type=range]::-ms-thumb {
   display: block;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Audiowide', cursive;
   height: 48px;
   line-height: 48px;
   padding: 0 32px;
 }
 
 .sidenav li > a:hover {
-  color: gold;
 }
 
 .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {

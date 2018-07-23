@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Outline|Bungee+Shade|Open+Sans|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,5 +20,37 @@ $( document ).ready(function() {
 });
 </script>
 
+<div class="container">
+	<div class="row resources">
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="media"></h1></a>
+		</div>
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="code"></h1></a>
+		</div>
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="safety"></h1></a>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
+<script>
+	new TypeIt('#media', {
+        strings: 'Media',
+        speed: 100,
+        autoStart: true
+      });
+	new TypeIt('#code', {
+        strings: 'Code',
+        speed: 100,
+        autoStart: true
+      });
+	new TypeIt('#safety', {
+        strings: 'Safety',
+        speed: 100,
+        autoStart: true
+      });
+</script>
 </body>
 </html>

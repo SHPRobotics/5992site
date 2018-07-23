@@ -7,7 +7,7 @@
   <link href="css/hover.css" rel="stylesheet">
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Outline|Bungee+Shade|Open+Sans|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,13 +20,23 @@ $( document ).ready(function() {
 </script>
 
 <div class="container">
-	<h3>What is FRC?</h3>
+	<h3 id='frc1'></h3>
 	<div class="divider"></div>
 	<div class="section">
-		<p>stuff</p>
+		<p class="flow-text">The mission of FIRST (F​or I​nspiration and Recognition of S​cience and T​echnology) is to inspire young people to be science and technology leaders and innovators, by engaging them in exciting Mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.</p>
 	</div>
 	<div class="divider"></div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
+<script>
+	new TypeIt('#frc1', {
+		strings: 'What is FRC?',
+		speed: 100,
+		autoStart: false
+	});
+
+</script>
 
 </body>
 </html>

@@ -1,12 +1,20 @@
-.navbar-fixed .nav-wrapper .brand-logo img {
-	height: 64px;
-}
-
 .social {
-	height: 20px;
-	width: auto;
+	margin:10px;
+	color: #1565C0;
 }
 
+.social-footer {
+	color: white;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+.social:hover {
+	color: gold;
+}
+
+.social-footer:hover {
+	color: gold;
+}
 .tab-content {
 	font-family: 'Open Sans', sans serif;
 	font-size: 20px;

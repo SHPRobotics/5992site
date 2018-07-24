@@ -8,39 +8,56 @@
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/nav.js"></script>
+  <header>
+    <script src="js/nav.js"></script>
+  </header>
 	<script>
 		$( document ).ready(function() {
       $('.sidenav').sidenav();
-      $('.slider').slider();
+      $('.parallax').parallax();
 });
 </script>
-
-<div style="background-color:black"}>
-<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="img/IMG_0809.jpg">
-      </li>
-      <li>
-        <img src="img/IMG_0672.jpg"> 
-      </li>
-      <li>
-        <img src="img/DSC_0068.jpg"> 
-      </li>
-    </ul>
-  </div>
+<main>
+<div class="parallax-container">
+  <div class="parallax"><img src="img/IMG_0809.jpg"></div>
 </div>
-<div class="container">
-  <div class="kickoff">
+<div class="container" style="display: flex; justify-content: center; align-content: center;">
+  <a href="https://twitter.com/Pirates5992" target="_blank"><i class="fa fa-twitter fa-3x social" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/pirates5992/" target="_blank"><i class="fa fa-instagram fa-3x social" aria-hideen="true"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-play fa-3x social" aria-hidden="true"></i></a>
+  <a href="mailto:setonhallrobotics@gmail.com"><i class="fa fa-envelope-o fa-3x social" aria-hidden="true"></i></a>
+  <a href="https://www.shp.org/" target="_blank"><i class="fa fa-graduation-cap fa-3x social" aria-hidden="true"></i></a>
+</div>
+  <div class="section white container">
+    <p class="flow-text">PIRATES 5992 is a FIRST Robotics Team based in West Orange, New Jersey from Seton Hall Preparatory School. Our main goal is to follow the mission of FIRST by engaging our members in various STEM activites, encouraging students to innovate by themselves and consider a career in a STEM field.</p>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/IMG_0569.jpg"></div>
+  </div>
+  <div class="section white container" style="display: flex">
+    <p class="flow-text">Founded in 1856, Seton Hall Preparatory School is New Jersey's oldest Catholic prep school. More than 950 students travel each day from over 130 towns to experience a challenging and comprehensive program of academics, activities, athletics, spirituality and service.</p>
+    <img id="crest" class="responsive-img" src="img/SHP Crest.jpeg" style="vertical-align: middle; align-self: center">
+  </div>
+  <style>
+    @media only screen and (max-width: 992px) {
+      #crest {
+        display: none;
+      }
+    }
+  </style>
+  <div class="parallax-container">
+  <div class="parallax"><img src="img/IMG_0672.jpg"></div>
+  </div>
+  <div class="kickoff section white container">
     <h1 id="type1"></h1>
     <h3 id="countdown"></h3>
   </div>
-</div>
+</main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
     <script>
       var countDownDate = new Date("Jan 5, 2019 10:30:00").getTime();
@@ -72,6 +89,8 @@
         autoStart: false
       });
     </script>
-
+<footer class="page-footer">
+  <script src="js/footer.js"></script>
+</footer>
 </body>
 </html>

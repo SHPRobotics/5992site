@@ -23,16 +23,19 @@
 });
 </script>
 <main>
+<div class="section white container center-align">
+  <h1 id="welcome"></h1>
+</div>
 <div class="parallax-container">
   <div class="parallax"><img src="img/IMG_0809.jpg"></div>
 </div>
 <div class="container" style="display: flex; justify-content: center; align-content: center;">
-  <a href="https://twitter.com/Pirates5992" target="_blank"><i class="fa fa-twitter fa-3x social" aria-hidden="true"></i></a>
-  <a href="https://www.instagram.com/pirates5992/" target="_blank"><i class="fa fa-instagram fa-3x social" aria-hideen="true"></i></a>
-  <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-play fa-3x social" aria-hidden="true"></i></a>
-  <a href="mailto:setonhallrobotics@gmail.com"><i class="fa fa-envelope-o fa-3x social" aria-hidden="true"></i></a>
-  <a href="https://www.shp.org/" target="_blank"><i class="fa fa-graduation-cap fa-3x social" aria-hidden="true"></i></a>
-  <a href="#" class="btn-flat waves-effect wave-light" style="margin-left:10px; margin-top: 15px">Donate</a>
+  <a href="https://twitter.com/Pirates5992" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/pirates5992/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hideen="true"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-play fa-2x social" aria-hidden="true"></i></a>
+  <a href="mailto:setonhallrobotics@gmail.com"><i class="fa fa-envelope-o fa-2x social" aria-hidden="true"></i></a>
+  <a href="https://www.shp.org/" target="_blank"><i class="fa fa-graduation-cap fa-2x social" aria-hidden="true"></i></a>
+  <a id="donate" href="#" class="btn-flat waves-effect wave-light" style="margin-left:10px; margin-top: 10px;">Donate</a>
 </div>
   <div class="section white container">
     <p class="flow-text">PIRATES 5992 is a FIRST Robotics Team based in West Orange, New Jersey from Seton Hall Preparatory School. Our main goal is to follow the mission of FIRST by engaging our members in various STEM activites, encouraging students to innovate collectively and introducing them to a career in STEM.</p>
@@ -87,6 +90,13 @@
       new TypeIt('#type1', {
         strings: 'Kickoff: January 5' + th + ', 2019',
         speed: 100,
+        autoStart: false
+      });
+    </script>
+    <script>
+      new TypeIt('#welcome', {
+        strings: 'Building robots since 2016',
+        speed: 75,
         autoStart: false
       });
     </script>

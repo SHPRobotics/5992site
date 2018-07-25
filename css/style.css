@@ -10,10 +10,14 @@
 }
 .social:hover {
 	color: gold;
+	-webkit-transition: color .3s;
+  	transition: color .3s;
 }
 
 .social-footer:hover {
 	color: gold;
+	-webkit-transition: color .3s;
+  	transition: color .3s;
 }
 .tab-content {
 	font-family: 'Open Sans', sans serif;
@@ -39,4 +43,32 @@ p, ul, li, {
 
 .spara{
 	height: 200px;
+}
+
+#donate:hover {
+	background-color: gold;
+}
+
+#donate-footer {
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+#donate-footer:hover {
+	color: gold;
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+
+@media only screen and (max-width: 600px) {
+	.social-footer {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	#donate-footer {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
 }

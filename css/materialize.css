@@ -3450,6 +3450,12 @@ table span.badge {
   width: 80%;
 }
 
+@media only screen and (min-width: 0px) {
+  .container {
+    width: 95%;
+  }
+}
+
 @media only screen and (min-width: 601px) {
   .container {
     width: 80%;
@@ -4325,7 +4331,7 @@ nav .nav-wrapper {
   height: 100%;
 }
 
-@media only screen and (min-width: 1125px) {
+@media only screen and (min-width: 825px) {
   nav a.sidenav-trigger {
     display: none;
   }
@@ -5278,6 +5284,7 @@ small {
 .btn-small,
 .btn-flat {
   font-size: 14px;
+  font-family: 'Comfortaa', cursive;
   outline: 0;
 }
 

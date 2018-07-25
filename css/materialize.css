@@ -2825,6 +2825,12 @@ video.responsive-video {
   height: 500px;
 }
 
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 200px;
+  }
+}
+
 .parallax-container .parallax {
   position: absolute;
   top: 0;
@@ -4342,7 +4348,7 @@ nav .sidenav-trigger i {
 
 nav .brand-logo {
   position: absolute;
-  color: snow;
+  color: white;
   font-family: 'Black Ops One', cursive;
   display: inline-block;
   padding: 0;
@@ -4417,7 +4423,7 @@ nav ul a {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   font-size: 1rem;
-  color: snow;
+  color: white;
   font-family: 'Audiowide', cursive;
   display: block;
   padding: 0 15px;
@@ -4599,7 +4605,7 @@ small {
 
 .flow-text {
   font-family: 'Open Sans', sans serif;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 @media only screen and (min-width: 360px) {
@@ -4900,7 +4906,7 @@ small {
 }
 
 .card .card-image .card-title {
-  color: snow;
+  color: white;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -5291,7 +5297,7 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: snow;
+  color: white;
   background-color: #1565C0;
   text-align: center;
   letter-spacing: .5px;
@@ -5535,8 +5541,8 @@ button.btn-floating {
 .btn-flat {
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-color: transparent;
-  color: #343434;
+  background-color: #1565C0;
+  color: white;
   cursor: pointer;
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
@@ -5583,7 +5589,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: snow;
+  background-color: white;
   margin: 0px;
   display: none;
   min-width: 100px;
@@ -7615,7 +7621,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a {
-  color: snow;
+  color: white;
   display: block;
   font-size: 14px;
   font-weight: 500;

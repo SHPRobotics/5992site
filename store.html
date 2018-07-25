@@ -3,45 +3,50 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/materialize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/hover.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<header>
-	<script src="js/nav.js"></script>
-</header>
-<main>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="js/materialize.js"></script>
+<header>
+<script src="js/nav.js"></script>
+</header>
 <script>
 $( document ).ready(function() {
   $('.sidenav').sidenav();
+  $('.carousel').carousel();
 });
 </script>
 
+<main>
 <div class="container">
-	<h3 id='frc1'></h3>
-	<div class="divider"></div>
-	<div class="section">
-		<p class="flow-text">The mission of FIRST (F​or I​nspiration and Recognition of S​cience and T​echnology) is to inspire young people to be science and technology leaders and innovators, by engaging them in exciting Mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.</p>
+	<div class="row resources">
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="soon"></h1></a>
+		</div>
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="code"></h1></a>
+		</div>
+		<div class="col s12 hvr-bounce-in">
+			<a href="#"><h1 id="safety"></h1></a>
+		</div>
 	</div>
-	<div class="divider"></div>
 </div>
+</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
 <script>
-	new TypeIt('#frc1', {
-		strings: 'What is FRC?',
-		speed: 100,
-		autoStart: false
-	});
-
+	new TypeIt('#media', {
+        strings: 'Coming Soon...',
+        speed: 100,
+        autoStart: true
+      });
 </script>
-</main>
 <footer class="page-footer">
   <script src="js/footer.js"></script>
 </footer>

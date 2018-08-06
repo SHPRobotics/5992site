@@ -8,47 +8,27 @@
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="js/materialize.js"></script>
 <header>
-<script src="js/nav.js"></script>
+  <div id="myNav"><script src="js/nav.js"></script></div>
 </header>
 <script>
 $( document ).ready(function() {
   $('.sidenav').sidenav();
-  $('.carousel').carousel();
 });
 </script>
 
 <main>
 <div class="container">
-	<div class="row resources">
-		<div class="col s12 hvr-bounce-in">
-			<a href="#"><h1 id="soon"></h1></a>
-		</div>
-		<div class="col s12 hvr-bounce-in">
-			<a href="#"><h1 id="code"></h1></a>
-		</div>
-		<div class="col s12 hvr-bounce-in">
-			<a href="#"><h1 id="safety"></h1></a>
-		</div>
-	</div>
+	<h1 class="center-align">Coming soon</h1>
 </div>
 </main>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
-<script>
-	new TypeIt('#media', {
-        strings: 'Coming Soon...',
-        speed: 100,
-        autoStart: true
-      });
-</script>
 <footer class="page-footer">
-  <script src="js/footer.js"></script>
+  <div id="myFooter"><script src="js/footer.js"></script></div>
 </footer>
 </body>
 </html>

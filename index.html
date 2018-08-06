@@ -8,100 +8,110 @@
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="js/materialize.js"></script>
-  <header>
-    <script src="js/nav.js"></script>
-  </header>
-	<script>
-		$( document ).ready(function() {
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $( document ).ready(function() {
       $('.sidenav').sidenav();
       $('.parallax').parallax();
 });
 </script>
+
+<header>
+  <div id="myNav"><script src="js/nav.js"></script></div>
+</header>
+
 <main>
-<div class="section white container center-align">
-  <h1 id="welcome"></h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<div id="welcomebanner" class="section white container center-align">
+  <h3 id="welcome"></h3>
 </div>
+
 <div class="parallax-container">
   <div class="parallax"><img src="img/IMG_0809.jpg"></div>
 </div>
+
 <div class="container" style="display: flex; justify-content: center; align-content: center;">
-  <a href="https://twitter.com/Pirates5992" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
-  <a href="https://www.instagram.com/pirates5992/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hideen="true"></i></a>
-  <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-play fa-2x social" aria-hidden="true"></i></a>
-  <a href="mailto:setonhallrobotics@gmail.com"><i class="fa fa-envelope-o fa-2x social" aria-hidden="true"></i></a>
-  <a href="https://www.shp.org/" target="_blank"><i class="fa fa-graduation-cap fa-2x social" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/Pirates5992" target="_blank"><i class="fab fa-twitter fa-2x social" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/pirates5992/" target="_blank"><i class="fab fa-instagram fa-2x social" aria-hideen="true"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x social" aria-hidden="true"></i></a>
+  <a href="mailto:setonhallrobotics@gmail.com"><i class="far fa-envelope fa-2x social" aria-hidden="true"></i></a>
+  <a href="https://www.shp.org/" target="_blank"><i class="fas fa-graduation-cap fa-2x social" aria-hidden="true"></i></a>
   <a id="donate" href="#" class="btn-flat waves-effect wave-light" style="margin-left:10px; margin-top: 10px;">Donate</a>
 </div>
-  <div class="section white container">
-    <p class="flow-text">PIRATES 5992 is a FIRST Robotics Team based in West Orange, New Jersey from Seton Hall Preparatory School. Our main goal is to follow the mission of FIRST by engaging our members in various STEM activites, encouraging students to innovate collectively and introducing them to a career in STEM.</p>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/IMG_0569.jpg"></div>
-  </div>
-  <div class="section white container" style="display: flex">
-    <p class="flow-text">Founded in 1856, Seton Hall Preparatory School is New Jersey's oldest Catholic prep school. More than 950 students travel each day from over 130 towns to experience a challenging and comprehensive program of academics, activities, athletics, spirituality and service.</p>
-    <img id="crest" class="responsive-img" src="img/SHP Crest.jpeg" style="vertical-align: middle; align-self: center">
-  </div>
-  <style>
-    @media only screen and (max-width: 992px) {
-      #crest {
-        display: none;
-      }
+
+<div class="section white container">
+  <p class="flow-text">PIRATES 5992 is a FIRST Robotics Team based in West Orange, New Jersey from Seton Hall Preparatory School. Our main goal is to follow the mission of FIRST by engaging our members in various STEM activites, encouraging students to innovate collectively and introducing them to a career in STEM.</p>
+</div>
+  
+<div class="parallax-container">
+  <div class="parallax"><img src="img/IMG_0569.jpg"></div>
+</div>
+
+<div class="section white container" style="display: flex">
+  <p class="flow-text">Founded in 1856, Seton Hall Preparatory School is New Jersey's oldest Catholic prep school. More than 950 students travel each day from over 130 towns to experience a challenging and comprehensive program of academics, activities, athletics, spirituality and service.</p>
+  <img id="crest" class="responsive-img" src="img/SHP Crest.jpeg" style="vertical-align: middle; align-self: center">
+</div>
+  
+<style>
+  @media only screen and (max-width: 992px) {
+    #crest {
+      display: none;
     }
-  </style>
-  <div class="parallax-container">
+  }
+</style>
+
+<div class="parallax-container">
   <div class="parallax"><img src="img/IMG_0672.jpg"></div>
-  </div>
-  <div class="kickoff section white container">
-    <h1 id="type1"></h1>
-    <h3 id="countdown"></h3>
-  </div>
+</div>
+
+<div class="kickoff section white container">
+  <h3 id="type1"></h3>
+  <h4 id="countdown"></h4>
+</div>
 </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
-    <script>
-      var countDownDate = new Date("Jan 5, 2019 10:30:00").getTime();
-      setTimeout(function() {
-        setInterval(function() {
-          var now = new Date().getTime();
-          var distance = countDownDate - now;
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
+<script>
+  var countDownDate = new Date("Jan 5, 2019 10:30:00").getTime();
+  setTimeout(function() {
+    setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
 
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-      }, 3000);
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "The Season Has Begun!";
+      }
+    }, 1000);
+  }, 3000);
 
-      var superscript = 'th';
-      var th = superscript.sup();
+  var superscript = 'th';
+  var th = superscript.sup();
 
-      new TypeIt('#type1', {
-        strings: 'Kickoff: January 5' + th + ', 2019',
-        speed: 100,
-        autoStart: false
-      });
-    </script>
-    <script>
-      new TypeIt('#welcome', {
+  new TypeIt('#type1', {
+    strings: 'Kickoff: January 5' + th + ', 2019',
+    speed: 100,
+    autoStart: false
+  });
+  new TypeIt('#welcome', {
         strings: 'Building robots since 2016',
         speed: 75,
         autoStart: false
       });
-    </script>
+</script>
+
 <footer class="page-footer">
-  <script src="js/footer.js"></script>
+  <div id="myFooter"><script src="js/footer.js"></script></div>
 </footer>
 </body>
 </html>

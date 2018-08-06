@@ -1,10 +1,11 @@
-document.write('<ul class="sidenav" id="mobile-demo">\
+document.getElementById('myNav').innerHTML = '<ul class="sidenav" id="mobile-demo">\
           <li><a href="about.html" class="hvr-underline-from-left">About</a></li>\
           <li><a href="frc.html" class="hvr-underline-from-left">FRC</a></li>\
           <li><a href="robots.html" class="hvr-underline-from-left">Robots</a></li>\
           <li><a href="mentors.html" class="hvr-underline-from-left">Mentors</a></li>\
           <li><a href="sponsors.html" class="hvr-underline-from-left">Sponsors</a></li>\
           <li><a href="resources.html" class="hvr-underline-from-left">Resources</a></li>\
+          <li><a href="store.html" class="hvr-underline-from-left">Store</a></li>\
   </ul>\
 <div class="navbar-fixed" id="myNav">\
     <nav>\
@@ -18,7 +19,11 @@ document.write('<ul class="sidenav" id="mobile-demo">\
           <li><a href="mentors.html" class="hvr-underline-from-center">Mentors</a></li>\
           <li><a href="sponsors.html" class="hvr-underline-from-center">Sponsors</a></li>\
           <li><a href="resources.html" class="hvr-underline-from-center">Resources</a></li>\
+          <li><a href="store.html" class="hvr-underline-from-left">Store</a></li>\
         </ul>\
       </div>\
     </nav>\
-  </div>');
+  </div>';
+
+
+

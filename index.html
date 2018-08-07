@@ -7,15 +7,19 @@
   <link href="css/hover.css" rel="stylesheet">
 	<link rel="icon" href="img/browsertab.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa|Audiowide" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script>
     $( document ).ready(function() {
       $('.sidenav').sidenav();
       $('.parallax').parallax();
+      $('.slider').slider();
 });
 </script>
 
@@ -24,7 +28,6 @@
 </header>
 
 <main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <div id="welcomebanner" class="section white container center-align">
   <h3 id="welcome"></h3>
 </div>
@@ -71,7 +74,31 @@
   <h3 id="type1"></h3>
   <h4 id="countdown"></h4>
 </div>
+
+<div style="width: 100%; padding: 0px; margin: 0px; overflow-x: hidden;">
+  <div class="infinite">
+    <div><img src="img/charlesedisonfund.jpg" style="height: 10rem; width: auto;"></div>
+    <div><img src="img/seton s.jpg" style="height: 10rem; width: auto;"></div>
+    <div><img src="img/air group.png" style="height: 10rem; width: auto;"></div>"
+    <div><img src="img/asco.jpg" style="height: 10rem; width: auto;"></div>
+    <div><img src="img/bricksimple.png" style="height: 10rem; width: auto;"></div>
+  </div>
+</div>
 </main>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.infinite').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    centerMode: true,
+    mobileFirst: true,
+  });
+  });
+</script>
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
 <script>

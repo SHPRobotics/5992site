@@ -48,6 +48,7 @@
 <div class="section white container">
   <p class="flow-text">PIRATES 5992 is a FIRST Robotics Team based in West Orange, New Jersey from Seton Hall Preparatory School. Our main goal is to follow the mission of FIRST by engaging our members in various STEM activites, encouraging students to innovate collectively and introducing them to a career in STEM.</p>
 </div>
+</div>
   
 <div class="parallax-container">
   <div class="parallax"><img src="img/IMG_0569.jpg"></div>
@@ -70,20 +71,26 @@
   <div class="parallax"><img src="img/IMG_0672.jpg"></div>
 </div>
 
+<div class="section white container">
+  <h3 class="center-align" style="margin:10px">Sponsored by:</h3>
+  <div class="infinite">
+    <div><img src="img/charlesedisonfund.jpg" style="height: 5rem; width: auto;"></div>
+    <div><img src="img/seton s.jpg" style="height: 5rem; width: auto;"></div>
+    <div><img src="img/air group.png" style="height: 5rem; width: auto;"></div>"
+    <div><img src="img/asco.jpg" style="height: 5rem; width: auto;"></div>
+    <div><img src="img/bricksimple.png" style="height: 5rem; width: auto;"></div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="img/DSC_0068.jpg"></div>
+</div>
+
 <div class="kickoff section white container">
   <h3 id="type1"></h3>
   <h4 id="countdown"></h4>
 </div>
 
-<div style="width: 100%; padding: 0px; margin: 0px; overflow-x: hidden;">
-  <div class="infinite">
-    <div><img src="img/charlesedisonfund.jpg" style="height: 10rem; width: auto;"></div>
-    <div><img src="img/seton s.jpg" style="height: 10rem; width: auto;"></div>
-    <div><img src="img/air group.png" style="height: 10rem; width: auto;"></div>"
-    <div><img src="img/asco.jpg" style="height: 10rem; width: auto;"></div>
-    <div><img src="img/bricksimple.png" style="height: 10rem; width: auto;"></div>
-  </div>
-</div>
 </main>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -91,10 +98,13 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('.infinite').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
     centerMode: true,
+    centerPadding: '60px',
     mobileFirst: true,
   });
   });

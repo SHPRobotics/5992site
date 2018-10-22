@@ -4939,10 +4939,10 @@ small {
 }
 
 .card .card-action {
-  background-color: inherit;
-  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  background-color: lightgray;
+  border-top: 1px solid gold;
   position: relative;
-  padding: 16px 24px;
+  padding-left: 24px;
 }
 
 .card .card-action:last-child {

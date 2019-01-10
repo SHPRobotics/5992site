@@ -22,6 +22,3 @@ document.getElementById('myNav').innerHTML = '<ul class="sidenav" id="mobile-dem
       </div>\
     </nav>\
   </div>';
-
-
-

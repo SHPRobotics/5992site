@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/materialize.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+	<link rel="icon" href="img/browsertab.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/materialize.js"></script>
+<header>
+  <div id="myNav"><script src="js/nav.js"></script></div>
+</header>
+<script>
+$( document ).ready(function() {
+  $('.sidenav').sidenav();
+});
+</script>
+
+<main>
+<div class="container">
+	<div class="row">
+		<table class="events flow-text">
+			<tr>
+				<th>Date</th>
+				<th>Event</th>
+			</tr>
+		</table>
+	</div>
+</div>
+<script src="js/tabletop.min.js"></script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: eventsTable } )
+  }
+
+  function eventsTable(sheets, tabletop) {
+    console.log(sheets);
+    var sheet = sheets['Events'];
+    var column_names = sheet.columnNames;
+
+    var table = $('.events');
+  
+    var tbody = $("<tbody></tbody>");
+        for(var i = 0; i < sheet.elements.length; i++) {
+          var row = sheet.elements[i];
+          var html_row = $("<tr></tr>");
+          for(var j = 0; j < column_names.length; j++) {
+            var column_name = column_names[j];
+            $("<td></td>").text(row[column_name]).appendTo(html_row);
+          }
+          tbody.append(html_row);
+        }
+        table.append(tbody);
+      }
+    window.addEventListener('DOMContentLoaded', init)
+</script>
+</main>
+
+<footer class="page-footer">
+  <div id="myFooter"><script src="js/footer.js"></script></div>
+</footer>
+</body>
+</html>

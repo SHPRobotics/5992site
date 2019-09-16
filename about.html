@@ -106,7 +106,7 @@ $( document ).ready(function() {
             </div>
             
         <h4 class="center-align">Emeritus</h4>
-            <table class="seniorMem centered" style="font-family: "Open Sans", sans serif; font-size: 1.2rem;>
+            <table class="seniorMem centered" style="font-family: 'Open Sans', sans serif; font-size: 1.2rem;">
             </table>
             <br>
         <h4 class="center-align">Seniors</h4>
@@ -133,23 +133,18 @@ $( document ).ready(function() {
     </div>
   </div>
 </div>
-
 <script src="js/tabletop.min.js"></script>
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-
   function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: seniorTable } )
   }
-
   function seniorTable(sheets, tabletop) {
     console.log(sheets);
     var sheet = sheets['Seniors'];
     var column_names = sheet.columnNames;
-
     var table = $('.seniorMem');
-
     var tbody = $("<tbody></tbody>");
         for(var i = 0; i < sheet.elements.length; i++) {
           var row = sheet.elements[i];
@@ -166,17 +161,14 @@ $( document ).ready(function() {
 </script>
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-
   function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: juniorTable } )
   }
-
   function juniorTable(sheets, tabletop) {
     console.log(sheets);
     var sheet = sheets['Juniors'];
     var column_names = sheet.columnNames;
-
     var table = $('.juniorMem');
   
     var tbody = $("<tbody></tbody>");
@@ -195,17 +187,14 @@ $( document ).ready(function() {
   </script>
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-
   function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: sophomoreTable } )
   }
-
   function sophomoreTable(sheets, tabletop) {
     console.log(sheets);
     var sheet = sheets['Sophomores'];
     var column_names = sheet.columnNames;
-
     var table = $('.sophomoreMem');
   
     var tbody = $("<tbody></tbody>");
@@ -224,17 +213,14 @@ $( document ).ready(function() {
 </script>
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-
   function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: freshmanTable } )
   }
-
   function freshmanTable(sheets, tabletop) {
     console.log(sheets);
     var sheet = sheets['Freshmen'];
     var column_names = sheet.columnNames;
-
     var table = $('.freshmanMem');
   
     var tbody = $("<tbody></tbody>");

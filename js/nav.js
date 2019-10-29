@@ -18,6 +18,7 @@ document.getElementById('myNav').innerHTML = '<ul class="sidenav" id="mobile-dem
           <li><a href="mentors.html" class="hvr-underline-from-center">Mentors</a></li>\
           <li><a href="sponsors.html" class="hvr-underline-from-center">Sponsors</a></li>\
           <li><a href="resources.html" class="hvr-underline-from-center">Resources</a></li>\
+          <li><a href="alumni.html" class = "hvr-underline-from-center">Alumni</a></li>\
         </ul>\
       </div>\
     </nav>\

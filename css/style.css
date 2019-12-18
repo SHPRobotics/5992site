@@ -25,17 +25,17 @@
   font-size: 1rem;
 }
 
-.storeimg {
+figure {
 	display: inline-block;
 	border: 1px dotted gray;
 	margin: 20px; /* adjust as needed */
 }
 
-.storeimg img {
+figure img {
 	vertical-align: top;	
 }
 
-.storeimg figcaption {
+figure figcaption {
     text-align: center;
 }
 

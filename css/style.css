@@ -25,6 +25,20 @@
   font-size: 1rem;
 }
 
+.storeimg {
+	display: inline-block;
+	border: 1px dotted gray;
+	margin: 20px; /* adjust as needed */
+}
+
+.storeimg img {
+	vertical-align: top;	
+}
+
+.storeimg figcaption {
+    text-align: center;
+}
+
 .leader-social {
   color: black;
   margin-left: 5px;

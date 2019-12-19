@@ -2212,14 +2212,6 @@ figure {
   margin: 1em 40px;
 }
 
-figure img {
-	vertical-align: top;	
-}
-
-figure figcaption {
-    text-align: center;
-}
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.

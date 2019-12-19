@@ -25,12 +25,6 @@
   font-size: 1rem;
 }
 
-figure {
-	display: inline-block;
-	border: 1px dotted gray;
-	margin: 20px; /* adjust as needed */
-}
-
 .leader-social {
   color: black;
   margin-left: 5px;

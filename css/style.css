@@ -31,14 +31,6 @@ figure {
 	margin: 20px; /* adjust as needed */
 }
 
-figure img {
-	vertical-align: top;	
-}
-
-figure figcaption {
-    text-align: center;
-}
-
 .leader-social {
   color: black;
   margin-left: 5px;

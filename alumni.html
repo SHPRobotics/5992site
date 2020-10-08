@@ -44,7 +44,7 @@ $( document ).ready(function() {
 </div>
 <script src="js/tabletop.min.js"></script>
 <script type='text/javascript'>  
-   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
   function init() {
     Tabletop.init( { key: publicSpreadsheetUrl,
                      callback: seniorTable } )
@@ -65,41 +65,9 @@ $( document ).ready(function() {
           tbody.append(html_row);
         }
         table.append(tbody);
-      }
+    }
     window.addEventListener('DOMContentLoaded', init)
 </script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: juniorTable } )
-  }
-  function juniorTable(sheets, tabletop) {
-    console.log(sheets);
-    var sheet = sheets['Juniors'];
-    var column_names = sheet.columnNames;
-    var table = $('.juniorMem');
-  
-    var tbody = $("<tbody></tbody>");
-        for(var i = 0; i < sheet.elements.length; i++) {
-          var row = sheet.elements[i];
-          var html_row = $("<tr></tr>");
-          for(var j = 0; j < column_names.length; j++) {
-            var column_name = column_names[j];
-            $("<td></td>").text(row[column_name]).appendTo(html_row);
-          }
-          tbody.append(html_row);
-        }
-        table.append(tbody);
-      }
-    window.addEventListener('DOMContentLoaded', init)
-  </script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: sophomoreTable } )
-  }
 <script type='text/javascript'>    
   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
   function init() {

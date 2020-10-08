@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/materialize.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/browsertab.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/materialize.js"></script>
+<header>
+  <div id="myNav"><script src="js/nav.js"></script></div>
+</header>
+<script>
+$( document ).ready(function() {
+  $('.sidenav').sidenav();
+  $('.scrollspy').scrollSpy();
+});
+</script>
+
+<div class="container">
+  <div class="row">
+      <div class="col s12 m9 l10">
+        <h4 class="center-align">Alumni</h4>
+        <table class="seniorMem centered" style="font-family: 'Open Sans', sans serif; font-size: 1.2rem;">
+        </table>
+       
+      </div>
+    </div>
+  </div>
+    <div class="col hide-on-small-only m3 l2">
+      <ul class="section table-of-contents fixed">
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#members">Members</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="js/tabletop.min.js"></script>
+<script type='text/javascript'>  
+   var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: seniorTable } )
+  }
+  function seniorTable(sheets, tabletop) {
+    console.log(sheets);
+    var sheet = sheets['Seniors'];
+    var column_names = sheet.columnNames;
+    var table = $('.seniorMem');
+    var tbody = $("<tbody></tbody>");
+        for(var i = 0; i < sheet.elements.length; i++) {
+          var row = sheet.elements[i];
+          var html_row = $("<tr></tr>");
+          for(var j = 0; j < column_names.length; j++) {
+            var column_name = column_names[j];
+            $("<td></td>").text(row[column_name]).appendTo(html_row);
+          }
+          tbody.append(html_row);
+        }
+        table.append(tbody);
+      }
+    window.addEventListener('DOMContentLoaded', init)
+</script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: juniorTable } )
+  }
+  function juniorTable(sheets, tabletop) {
+    console.log(sheets);
+    var sheet = sheets['Juniors'];
+    var column_names = sheet.columnNames;
+    var table = $('.juniorMem');
+  
+    var tbody = $("<tbody></tbody>");
+        for(var i = 0; i < sheet.elements.length; i++) {
+          var row = sheet.elements[i];
+          var html_row = $("<tr></tr>");
+          for(var j = 0; j < column_names.length; j++) {
+            var column_name = column_names[j];
+            $("<td></td>").text(row[column_name]).appendTo(html_row);
+          }
+          tbody.append(html_row);
+        }
+        table.append(tbody);
+      }
+    window.addEventListener('DOMContentLoaded', init)
+  </script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: sophomoreTable } )
+  }
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10Qr61o-T54hU15EzSWs5rvvPW2wctxpsme3uzuDH-kQ/edit?usp=sharing';
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: seniorTable } )
+  }
+  function seniorTable(sheets, tabletop) {
+    console.log(sheets);
+    var sheet = sheets['Seniors'];
+    var column_names = sheet.columnNames;
+    var table = $('.seniorMem');
+    var tbody = $("<tbody></tbody>");
+        for(var i = 0; i < sheet.elements.length; i++) {
+          var row = sheet.elements[i];
+          var html_row = $("<tr></tr>");
+          for(var j = 0; j < column_names.length; j++) {
+            var column_name = column_names[j];
+            $("<td></td>").text(row[column_name]).appendTo(html_row);
+          }
+          tbody.append(html_row);
+        }
+        table.append(tbody);
+      }
+    window.addEventListener('DOMContentLoaded', init)
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.min.js"></script>
+<script>
+  new TypeIt('#about1', {
+    strings: 'About',
+    speed: 100,
+    autoStart: false
+  });
+  new TypeIt('#about4', {
+    strings: 'Achievements',
+    speed: 100,
+    autoStart: false
+  });
+  new TypeIt('#about5', {
+    strings: 'Members',
+    speed: 100,
+    autoStart: false
+  });
+</script>
+<footer class="page-footer">
+  <div id="myFooter"><script src="js/footer.js"></script></div>
+</footer>
+</body>
+</html>
